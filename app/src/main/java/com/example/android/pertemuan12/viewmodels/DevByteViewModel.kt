@@ -33,6 +33,7 @@ class DevByteViewModel(application: Application) : AndroidViewModel(application)
         refreshDataFromRepository()
     }
 
+    // fungsi untuk refresh data
     private fun refreshDataFromRepository() {
         viewModelScope.launch {
             try {

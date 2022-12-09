@@ -43,6 +43,7 @@ class DevByteFragment : Fragment() {
         })
     }
 
+    // fungsi untuk menampilkan layout
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -85,6 +86,7 @@ class DevByteFragment : Fragment() {
     }
 
 
+    // fungsi untuk menampilkan toast
     private fun onNetworkError() {
         if (!viewModel.isNetworkErrorShown.value!!) {
             Toast.makeText(activity, "Network Error", Toast.LENGTH_LONG).show()
